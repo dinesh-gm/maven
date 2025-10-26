@@ -125,8 +125,8 @@
     <label for="Name"><b>Full Name</b></label>
     <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
     
-    <label for="phone1"><b>Mobile Number</b></label>
-    <input type="tel" placeholder="Enter Mobile Number" name="phone1" id="phone1" required>
+    <label for="phone1"><b>Phone Number</b></label>
+    <input type="tel" placeholder="Enter Phone Number" name="phone1" id="phone1" required>
     
     <label for="email"><b>Email</b></label>
     <input type="email" placeholder="Enter Email" name="email" id="email" required>
