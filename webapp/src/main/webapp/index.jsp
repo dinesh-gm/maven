@@ -143,7 +143,7 @@
   </div>
 
   <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
+    <p>Already have an account? <a href="#">Log in</a>.</p>
   </div>
 
   <h1 class="thankyou">Thank You, Happy Learning!</h1>
