@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>DevOps Registration</title>
+<title>DevOps Registration - Modern UI</title>
 
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -13,7 +13,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background: #f4f7fb;
+  background: linear-gradient(135deg, #1f2937, #111827);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,11 +40,11 @@ body {
 /* Container */
 .container {
   width: 420px;
-  background: #ffffffc9;
+  background: rgba(255,255,255,0.08);
   backdrop-filter: blur(12px);
   border-radius: 16px;
   padding: 35px;
-  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 35px rgba(0,0,0,0.4);
   text-align: center;
   animation: fadeIn 0.7s ease-in-out;
 }
@@ -58,19 +58,19 @@ h1 {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 4px;
-  color: #333;
+  color: #f3f4f6;
 }
 
 p.subtitle {
   font-size: 13px;
-  color: #666;
+  color: #cbd5e1;
   margin-bottom: 20px;
 }
 
 label {
   font-size: 13px;
   font-weight: 500;
-  color: #2b2b2b;
+  color: #e5e7eb;
   display: block;
   text-align: left;
   margin-bottom: 5px;
@@ -84,9 +84,9 @@ input[type=tel] {
   padding: 12px;
   margin-bottom: 12px;
   border-radius: 8px;
-  border: 1px solid #d6d6d6;
+  border: 1px solid rgba(255,255,255,0.2);
   outline: none;
-  background: #fafbff;
+  background: rgba(255,255,255,0.1);
   font-size: 14px;
   transition: 0.3s;
 }
