@@ -1,172 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DevOps Registration</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DevOps Registration - Modern UI</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
 <style>
-/* Animated Gradient Background */
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", Arial, sans-serif;
-  background: linear-gradient(-45deg, #00c6ff, #0072ff, #8e2de2, #4a00e0);
-  background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
+  font-family: "Poppins", sans-serif;
+  background: #f4f7fb;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
 }
 
-/* Gradient Animation */
-@keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+/* Floating background image */
+.hero-bg {
+  position: absolute;
+  right: -60px;
+  bottom: -50px;
+  width: 500px;
+  opacity: 0.2;
+  animation: float 6s infinite ease-in-out;
 }
 
-/* Form Container - Glass Effect */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Container */
 .container {
-  width: 380px;
-  background: rgba(255,255,255,0.15);
+  width: 420px;
+  background: #ffffffc9;
   backdrop-filter: blur(12px);
-  border-radius: 15px;
-  border: 1px solid rgba(255,255,255,0.3);
-  padding: 30px;
-  box-shadow: 0 10px 35px rgba(0,0,0,0.3);
+  border-radius: 16px;
+  padding: 35px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
   text-align: center;
-  color: #fff;
-  animation: fadeIn 0.8s ease-in-out;
+  animation: fadeIn 0.7s ease-in-out;
 }
 
-/* Fade Animation */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Headings */
 h1 {
   font-size: 26px;
-  margin-bottom: 5px;
   font-weight: 600;
+  margin-bottom: 4px;
+  color: #333;
 }
 
-p {
+p.subtitle {
   font-size: 13px;
-  opacity: 0.9;
+  color: #666;
+  margin-bottom: 20px;
 }
 
-/* Input Fields */
-input[type=text], 
-input[type=password], 
-input[type=email], 
+label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #2b2b2b;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
 input[type=tel] {
   width: 100%;
   padding: 12px;
-  margin: 10px 0;
+  margin-bottom: 12px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #d6d6d6;
   outline: none;
-  background: rgba(255,255,255,0.2);
-  color: #fff;
+  background: #fafbff;
   font-size: 14px;
   transition: 0.3s;
 }
 
 input:focus {
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 8px rgba(255,255,255,0.8);
+  border-color: #6a8cff;
+  box-shadow: 0 0 6px rgba(0, 102, 255, 0.25);
 }
 
-/* Labels */
-label {
-  font-size: 13px;
-  font-weight: 500;
-  color: #fff;
-  display: block;
-  text-align: left;
-  margin: 6px 0 3px;
-}
-
-/* Button */
-.registerbtn {
+button {
   width: 100%;
-  background: linear-gradient(90deg, #ff512f, #dd2476);
+  background: #6a8cff;
+  border: none;
   padding: 14px;
   border-radius: 8px;
-  border: none;
   color: white;
   font-size: 16px;
   cursor: pointer;
   font-weight: 600;
   transition: 0.3s;
-  margin-top: 10px;
 }
 
-.registerbtn:hover {
-  background: linear-gradient(90deg, #ff8c00, #fd1c47);
-  transform: scale(1.05);
+button:hover {
+  background: #4c6bd9;
+  transform: translateY(-2px);
 }
 
-/* Sign-in text */
 .signin {
-  margin-top: 15px;
   font-size: 13px;
-  color: #fff;
+  color: #555;
+  margin-top: 16px;
 }
-
 .signin a {
-  color: #00f2fe;
-  font-weight: bold;
+  color: #325dff;
+  font-weight: 600;
+  text-decoration: none;
 }
+.signin a:hover { text-decoration: underline; }
 
-.signin a:hover {
-  text-decoration: underline;
-}
-
-/* Thank You */
-h1.thankyou {
-  font-size: 18px;
-  margin-top: 20px;
-  color: #00ffe7;
-  font-weight: bold;
+.success-msg {
+  font-size: 14px;
+  color: #28a745;
+  margin-top: 12px;
+  font-weight: 600;
 }
 </style>
-
 </head>
 <body>
 
+<img src="https://cdn-icons-png.flaticon.com/512/5432/5432209.png" class="hero-bg" />
+
 <form action="action_page.php">
   <div class="container">
-    <h1>New User Registration</h1>
-    <p>Join the DevOps Learning Community</p>
+    <h1>Join DevOps Club</h1>
+    <p class="subtitle">Build Cloud, Automation & DevOps skills</p>
 
     <label for="Name">Full Name</label>
-    <input type="text" placeholder="Enter Full Name" name="Name" id="Name" required>
+    <input type="text" placeholder="Enter Full Name" id="Name" required />
 
     <label for="phone1">Phone Number</label>
-    <input type="tel" placeholder="Enter Phone Number" name="phone1" id="phone1" required>
+    <input type="tel" placeholder="Enter Phone Number" id="phone1" required />
 
     <label for="email">Email</label>
-    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+    <input type="email" placeholder="Enter Email" id="email" required />
 
     <label for="psw">Password</label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+    <input type="password" placeholder="Create Password" id="psw" required />
 
     <label for="psw-repeat">Repeat Password</label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <input type="password" placeholder="Confirm Password" id="psw-repeat" required />
 
-    <button type="submit" class="registerbtn">Register</button>
+    <button type="submit">Register</button>
+
+    <p class="signin">Already registered? <a href="#">Login</a></p>
+    <p class="success-msg">Happy Learning 🚀</p>
   </div>
-
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Log in</a></p>
-  </div>
-
-  <h1 class="thankyou">Thank You, Happy Learning!</h1>
 </form>
 
 </body>
