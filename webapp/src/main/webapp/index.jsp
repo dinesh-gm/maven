@@ -136,7 +136,7 @@ button:hover {
 </head>
 <body>
 
-<img src="https://cdn-icons-png.flaticon.com/512/4140/4140048.png" class="hero-bg" />
+<img src="https://cdn-icons-png.flaticon.com/512/9068/9068642.png" class="hero-bg" />
 
 <form action="action_page.php">
   <div class="container">
