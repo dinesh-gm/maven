@@ -146,8 +146,8 @@ button:hover {
     <label for="Name">Full Name</label>
     <input type="text" placeholder="Enter Full Name" id="Name" required />
 
-    <label for="phone1">Phone Number</label>
-    <input type="tel" placeholder="Enter Phone Number" id="phone1" required />
+    <label for="phone1">Mobile Number</label>
+    <input type="tel" placeholder="Enter Mobile Number" id="phone1" required />
 
     <label for="email">Email</label>
     <input type="email" placeholder="Enter Email" id="email" required />
